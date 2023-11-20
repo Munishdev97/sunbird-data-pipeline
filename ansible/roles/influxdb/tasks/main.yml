@@ -6,7 +6,7 @@
   apt_key: url=https://repos.influxdata.com/influxdb.key state=present
 
 - name: Add InfluxDB repository
-  apt_repository: repo='deb https://repos.influxdata.com/ubuntu bionic stable' state=present
+  apt_repository: repo='deb https://repos.influxdata.com/ubuntu trusty stable' state=present
 
 - name: Install InfluxDB packages
   apt: name=influxdb state=present
@@ -30,7 +30,7 @@
   wait_for: port=8086 timeout=60
 
 - name: Create monitoring_events database
-  command: /usr/bin/influx -execute "CREATE DATABASE {{ monitoring_db }}"
+  command: /usr/bin/influxd -execute "CREATE DATABASE {{ monitoring_db }}"
 
 - name: Check if influxdb_relay_deb_package_name is installed
   command: dpkg-query -W {{ influxdb_relay_deb_package_name }}

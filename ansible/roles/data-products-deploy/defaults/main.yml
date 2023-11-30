@@ -3,8 +3,8 @@ analytics_group: analytics
 spark_output_temp_dir: /mount/data/analytics/tmp/
 oci_install_loc: /home/{{analytics_user}}/bin/
 
-bucket: {{ cloud_storage_telemetry_bucketname }}
-secor_bucket: {{ cloud_storage_telemetry_bucketname }}
+bucket: "{{cloud_storage_telemetry_bucketname}}"
+secor_bucket: "{{cloud_storage_telemetry_bucketname}}"
 # dp_object_store_type: "azure"
 dp_raw_telemetry_backup_location: "unique/raw/"
 dp_storage_key_config: "azure_storage_key"

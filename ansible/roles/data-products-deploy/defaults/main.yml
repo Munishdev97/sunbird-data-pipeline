@@ -291,5 +291,5 @@ jets3t_s3_disable_dns_buckets: "{{ s3_path_style_access }}"
 jets3t_s3_https_only: "{{ s3_https_only }}"
 jets3t_s3_default_bucket_location: "{{ s3_default_bucket_location }}"
 
-
 spark_pg_db_name: "analytics"
+spark_bds_url: "" # spark cluster URL. Similar to azure hdInsight cluster/ aws EMR cluster

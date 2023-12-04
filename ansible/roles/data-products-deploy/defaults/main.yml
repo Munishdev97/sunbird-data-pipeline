@@ -281,8 +281,8 @@ cassandra_migrator_job_name: "Cassandra Migrator"
 assessment_metric_primary_category: "{{ exhaust_job_assessment_primary_category }}"
 
 # Default s3 variables
-sunbird_private_s3_storage_key: "{{sunbird_private_s3_storage_key}}"
-sunbird_private_s3_storage_secret: "{{sunbird_private_s3_storage_secret}}"
+sunbird_private_s3_storage_key: "a4e68ec4bcc2d4862c4557af66fa5a09284bae79"
+sunbird_private_s3_storage_secret: "TgnUO5AOrREHWC0wHSwmzOhIQmtEU0f0VYU+Ao1//tA="
 
 
 # jets3t s3 config, allows us to configure for s3-like object stores

@@ -250,6 +250,9 @@ spec:
   metrics:
     - type: External
       external:
-        metricName: {{ .Release.Name }}_kafka_consumergroup_lag_sum
-        targetValue: "{{ $prop.scale_target_value }}"
+        metric:
+          name: {{ .Release.Name }}_kafka_consumergroup_lag_sum
+        target:
+          type: AverageValue
+          value: "{{ $prop.scale_target_value }}"
 {{- end }}        

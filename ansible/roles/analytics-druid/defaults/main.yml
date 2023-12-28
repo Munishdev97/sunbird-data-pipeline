@@ -30,7 +30,7 @@ druid_request_logging_type: "file"
 
 #Druid Extensions
 
-druid_storage_type: "{{ druid_storage_type }}"
+druid_storage_type: "{{ cloud_storage_telemetry_type }}"
 
 druid_default_extensions_list: '"graphite-emitter", "postgresql-metadata-storage", "druid-kafka-indexing-service", "druid-datasketches"'
 
